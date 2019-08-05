@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer"
+        android:padding="@dimen/padding_2"
+        android:background="@color/footer"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            //Left
+            <ImageView
+                android:id="@+id/imageNotification"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_12"
+                android:src="@drawable/ic_notification"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            //Center
+            <ImageView
+                android:id="@+id/imageGoogleMaps"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_7"
+                android:src="@drawable/ic_googlemaps"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            //Right
+            <ImageView
+                android:id="@+id/imageNews"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_12"
+                android:src="@drawable/ic_news"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

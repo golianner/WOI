@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header"
+        android:padding="@dimen/padding_2"
+        android:background="@color/header">
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_56"
+            android:padding="@dimen/padding_16"
+            android:text="Bilardo"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_16"
+            android:drawableRight="@drawable/ic_drop_down_arrow"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/imgMail"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_16"
+                android:src="@drawable/ic_mail"/>
+
+            <ImageView
+                android:id="@+id/imgAddProfil"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_16"
+                android:src="@drawable/ic_add_user"/>
+
+            <ImageView
+                android:id="@+id/imgPreference"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:padding="@dimen/padding_16"
+                android:src="@drawable/ic_preference"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

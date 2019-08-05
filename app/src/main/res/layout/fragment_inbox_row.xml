@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/height_80"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:background="@color/bgColor"
+    >
+
+    <ImageView
+        android:id="@+id/imgInbox"
+        android:layout_width="@dimen/width_35"
+        android:layout_height="@dimen/height_35"
+        android:src="@drawable/no_image"
+        android:layout_margin="@dimen/padding_5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_10"
+        android:gravity="left|center">
+
+        <TextView
+            android:id="@+id/txtNameInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jane"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_14"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSubjectInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum Dolor Sit Amet"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/txtDetailInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum Dolor Sit Amet, Conselur ..."
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="@dimen/font_12"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLogsInbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 minute ago"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/font_10"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/margin_5"/>
+
+</LinearLayout>

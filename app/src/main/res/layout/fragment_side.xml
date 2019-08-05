@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_130"
+        android:orientation="horizontal"
+        android:background="@color/colorRed"
+        android:paddingLeft="@dimen/padding_15"
+        android:gravity="left|center">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgProfileSide"
+            android:layout_width="@dimen/width_100"
+            android:layout_height="@dimen/height_100"
+            android:src="@drawable/no_image"
+            android:layout_centerHorizontal="true"
+            app:siBorderWidth="0dp"
+            app:siBorderColor="@color/colorWhite"
+            app:siSquare="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bilardo"
+            android:textSize="@dimen/font_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:textColor="@color/textColorWhite"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableRight="@drawable/ic_drop_down_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPromotions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_tag"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="My Promotions"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/txtPromotionJlhInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/rounded_textview_info"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/textColorWhite"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_pinterest"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="My Interest"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/txtInterestJlhInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/rounded_textview_info"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/textColorWhite"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMesssage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_mail"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="My Messages"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/txtMessageJlhInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/rounded_textview_info"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/textColorWhite"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutIndoorMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_map"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="View Indoor Maps"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/txtIndoorMapsJlhInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/rounded_textview_info"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/textColorWhite"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/padding_25"
+        android:layout_marginRight="@dimen/padding_25"
+        android:paddingTop="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_15"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/layoutAccountSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_profile"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="Account Settings"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_terms"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="Terms of Use"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_privacypolicy"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="Privacy Policy"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_aboutus"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="About Us"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/padding_25"
+        android:layout_marginRight="@dimen/padding_25"
+        android:paddingTop="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_15"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/layoutLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/bgColor"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_30"
+            android:src="@drawable/ic_logout"
+            android:padding="@dimen/padding_5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="Log Out"
+            android:textSize="@dimen/font_18"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+
+</LinearLayout>

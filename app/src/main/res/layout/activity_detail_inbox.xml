@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wto.com.wto.DetailInboxActivity"
+    android:background="@color/bgColor"
+    >
+    <LinearLayout
+        android:id="@+id/activity_detail_inbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="wto.com.wto.DetailInboxActivity"
+        android:background="@color/bgColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:src="@drawable/ic_back"
+                android:padding="@dimen/padding_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_56"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProfileInbox"
+                    android:layout_width="@dimen/width_35"
+                    android:layout_height="@dimen/height_35"
+                    android:src="@drawable/no_image" />
+
+                <TextView
+                    android:id="@+id/txtNameInbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorShadowBlack"
+                    android:textSize="@dimen/font_18"
+                    android:text="Bilardo"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtSubjectInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_20"
+            android:text="Test"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+        <TextView
+            android:id="@+id/txtDetailInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_14"
+            android:text="Test"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/colorGray"
+            android:padding="@dimen/padding_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10">
+
+            <LinearLayout
+                android:id="@+id/layoutReply"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="@dimen/height_80"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/layout_rounded_inbox">
+
+                <ImageView
+                    android:id="@+id/imgReply"
+                    android:layout_width="@dimen/width_35"
+                    android:layout_height="@dimen/height_35"
+                    android:padding="@dimen/padding_5"
+                    android:src="@drawable/ic_reply"/>
+
+                <TextView
+                    android:id="@+id/txtReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reply"
+                    android:textColor="@color/textColorGrayDarker"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/padding_5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutArchieve"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="@dimen/height_80"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/layout_rounded_inbox">
+
+                <ImageView
+                    android:id="@+id/imgArchieve"
+                    android:layout_width="@dimen/width_35"
+                    android:layout_height="@dimen/height_35"
+                    android:padding="@dimen/padding_5"
+                    android:src="@drawable/ic_download"/>
+
+                <TextView
+                    android:id="@+id/txtArchieve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Archieve"
+                    android:textColor="@color/textColorGrayDarker"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/padding_5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTrash"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="@dimen/height_80"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/layout_rounded_inbox">
+
+                <ImageView
+                    android:id="@+id/imgTrash"
+                    android:layout_width="@dimen/width_35"
+                    android:layout_height="@dimen/height_35"
+                    android:src="@drawable/ic_trash"
+                    android:padding="@dimen/padding_5"/>
+
+                <TextView
+                    android:id="@+id/txtTrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trash"
+                    android:textColor="@color/textColorGrayDarker"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/padding_5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

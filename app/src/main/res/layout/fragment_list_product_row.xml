@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_290"
+        android:background="@color/bgColor">
+
+        <LinearLayout
+            android:id="@+id/layoutRowTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_290"
+            android:orientation="vertical"
+            android:background="@color/bgColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_30"
+                android:paddingRight="@dimen/padding_30"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/textProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KFC"
+                    android:textSize="@dimen/font_18"
+                    android:textColor="@color/textColor"
+                    android:layout_centerInParent="true"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutProductReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageProductReview"
+                        android:layout_width="@dimen/width_20"
+                        android:layout_height="@dimen/height_20"
+                        android:src="@drawable/ic_review"/>
+
+                    <TextView
+                        android:id="@+id/textProductReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:paddingLeft="@dimen/padding_5"
+                        android:textSize="@dimen/font_18"
+                        android:textColor="@color/textColor"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_230"
+                android:src="@drawable/no_image"
+                android:scaleType="fitXY"
+                android:background="#eeeeef"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageUserProduct"
+            android:layout_width="@dimen/width_55"
+            android:layout_height="@dimen/height_55"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_15"
+            android:src="@drawable/ic_user"/>
+
+        <TextView
+            android:id="@+id/textProductLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="260 Likes"
+            android:textSize="@dimen/font_15"
+            android:padding="@dimen/padding_10"
+            android:background="@drawable/rounded_textview_info"
+            android:textColor="@color/textColorWhite"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_30"
+        android:paddingRight="@dimen/padding_30"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="@dimen/padding_5"
+        android:background="@color/bgColor">
+
+        <TextView
+            android:id="@+id/textProductPromotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot Promo Buy 1 Get 1 Free"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/textProductDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectur  adipiscing elit, sed do eiusmod tempor incididunt ut labore ..."
+            android:textSize="@dimen/font_12"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/colorGray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer"
+        android:padding="@dimen/padding_2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/bgColor">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            //Left
+            <ImageView
+                android:id="@+id/imageNotification"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:paddingBottom="@dimen/padding_5"
+                android:src="@drawable/ic_navigation"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            //Center
+            <ImageView
+                android:id="@+id/imageLike"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:paddingBottom="@dimen/padding_5"
+                android:src="@drawable/ic_like"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            //Right
+            <ImageView
+                android:id="@+id/imageShare"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:paddingBottom="@dimen/padding_5"
+                android:src="@drawable/ic_share"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

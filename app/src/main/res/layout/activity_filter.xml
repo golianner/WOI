@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context="wto.com.wto.FilterActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_250">
+
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_250"
+                android:src="@drawable/no_image"
+                android:alpha="0.3"/>
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:src="@drawable/ic_back"
+                android:padding="@dimen/padding_10"/>
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:src="@drawable/ic_search"
+                android:padding="@dimen/padding_10"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/imgCancel"
+                android:layout_width="@dimen/width_56"
+                android:layout_height="@dimen/height_56"
+                android:src="@drawable/ic_cancel"
+                android:padding="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/edittxtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_35"
+                android:textColor="@color/textColorShadowBlack"
+                android:textSize="@dimen/font_16"
+                android:padding="@dimen/padding_10"
+                android:background="@drawable/rounded_edittext"
+                android:layout_alignLeft="@+id/imgBack"
+                android:layout_alignRight="@+id/imgCancel"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:layout_marginRight="@dimen/margin_50"
+                android:drawableRight="@drawable/ic_search"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtNamaKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bandung"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_24"
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/layoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/txtNamaKota"
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txtJlhStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12904"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stores"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_16"
+                    android:layout_marginTop="@dimen/margin_5"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/height_70"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/txtJlhPromotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="53049"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promotion"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_16"
+                    android:layout_marginTop="@dimen/margin_5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgProfil"
+            android:layout_width="@dimen/width_100"
+            android:layout_height="@dimen/height_100"
+            android:src="@drawable/no_image"
+            android:layout_alignTop="@+id/layoutMiddle"
+            android:layout_marginTop="@dimen/margin_80"
+            android:layout_centerHorizontal="true"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="@color/bgColor"
+            app:siSquare="true"/>
+
+        <LinearLayout
+            android:id="@+id/layoutProfilDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/imgProfil"
+            android:layout_marginTop="@dimen/margin_110"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txtJlhDistric"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24 Districts"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_12"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtJlhPublicSpace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24 Public Spaces"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_12"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtJlhMalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10 Malls"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_12"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_alignTop="@+id/layoutProfilDescription"
+            android:layout_marginTop="@dimen/margin_30"
+            />
+
+        <GridView
+            android:id="@+id/gridKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:columnWidth="@dimen/width_100"
+            android:background="@color/bgColor"
+            android:layout_alignTop="@+id/line"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/font_16"
+            android:padding="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:background="@drawable/button_rounded_background"
+            android:layout_alignParentBottom="true"
+             />
+
+    </RelativeLayout>
+
+</ScrollView>
+
